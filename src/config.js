@@ -5,7 +5,7 @@ export const CONTACTO = {
   whatsapp: "51998227988", // formato internacional sin + ni espacios (es el que usa wa.me)
   whatsappTexto: "+51 998 227 988", // cómo se muestra en la página
   // TODO: confirmar con Paula este número: el código 51 es de Perú, y para Rosario sería 549341...
-  instagram: "TODO_usuario", // TODO: usuario de Instagram sin @
+  instagram: "estudio_verde", // usuario de Instagram sin @
   ubicacion: "Rosario, con cita previa",
 };
 
