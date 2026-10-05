@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== BASE ===== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Que las anclas no queden tapadas por el header fijo */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-crema font-sans text-bosque antialiased;
+  }
+
+  /* Foco visible en todo lo interactivo */
+  :focus-visible {
+    @apply outline outline-2 outline-offset-4 outline-bosque;
+  }
+  .sobre-oscuro :focus-visible {
+    @apply outline-crema;
+  }
+}
+
+/* ===== COMPONENTES REUTILIZABLES ===== */
+@layer components {
+  /* Ancho y márgenes laterales de todas las secciones */
+  .contenedor {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  /* Etiqueta chica en mayúsculas arriba de cada título */
+  .etiqueta {
+    @apply text-xs font-medium uppercase tracking-[0.2em] text-salvia-oscuro;
+  }
+
+  /* Título de sección (h2) */
+  .titulo {
+    @apply font-serif text-4xl font-medium leading-[1.1] text-bosque sm:text-5xl;
+  }
+
+  /* Botones: mínimo 48px de alto para que sean cómodos de tocar */
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2.5 rounded-full px-6 py-3 text-base font-medium transition-colors duration-200;
+  }
+  .btn-principal {
+    @apply btn bg-bosque text-crema hover:bg-salvia-oscuro;
+  }
+  .btn-secundario {
+    @apply btn border border-bosque/30 text-bosque hover:border-bosque hover:bg-bosque/5;
+  }
+}
+
+/* ===== MOVIMIENTO ===== */
+/* Aparición suave al scrollear (ver components/Aparecer.jsx) */
+.aparecer {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.aparecer-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Botón flotante: respeta el safe-area de celulares con notch */
+.flotante {
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .aparecer {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
