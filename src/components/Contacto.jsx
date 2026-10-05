@@ -9,7 +9,7 @@ const CANALES = [
     canal: "whatsapp",
     Icono: IconoWhatsApp,
     texto: "Escribinos por WhatsApp",
-    detalle: "Te responde Paula",
+    detalle: CONTACTO.whatsappTexto,
     principal: true,
   },
   {

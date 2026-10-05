@@ -24,7 +24,7 @@ export default function Footer() {
             <li>
               <a {...enlace("whatsapp")} className={claseLink}>
                 <IconoWhatsApp />
-                Escribinos por WhatsApp
+                {CONTACTO.whatsappTexto}
               </a>
             </li>
             <li>

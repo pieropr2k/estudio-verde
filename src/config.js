@@ -1,8 +1,10 @@
 // ===== DATOS DE CONTACTO =====
 // Único lugar donde se cambian. Toda la web lee de acá.
 export const CONTACTO = {
-  email: "TODO@estudioverde.com", // TODO: pedir a Paula el mail del estudio
-  whatsapp: "549341XXXXXXX", // TODO: WhatsApp de Paula, formato internacional sin + ni espacios
+  email: "estudioverde@gmail.com",
+  whatsapp: "51998227988", // formato internacional sin + ni espacios (es el que usa wa.me)
+  whatsappTexto: "+51 998 227 988", // cómo se muestra en la página
+  // TODO: confirmar con Paula este número: el código 51 es de Perú, y para Rosario sería 549341...
   instagram: "TODO_usuario", // TODO: usuario de Instagram sin @
   ubicacion: "Rosario, con cita previa",
 };
