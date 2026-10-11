@@ -36,7 +36,7 @@ export default function Hero() {
         />
 
         <div className="contenedor">
-          <p className="etiqueta text-salvia-claro">Arquitectura y paisajismo · Rosario</p>
+          <p className="etiqueta text-salvia-claro">Estudio de Rosario</p>
           <h1 className="mt-4 max-w-3xl font-serif text-[2.6rem] font-medium leading-[1.05] sm:text-6xl lg:text-7xl">
             Arquitectura y paisajismo con <em className="font-normal text-salvia-claro">conciencia ambiental</em>
           </h1>
@@ -45,7 +45,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <a {...enlace("whatsapp")} className="btn bg-crema text-bosque hover:bg-arena">
+            <a {...enlace("whatsapp")} className="btn bg-salvia-oscuro text-crema ring-1 ring-crema/40 hover:bg-salvia">
               <IconoWhatsApp />
               Escribinos por WhatsApp
             </a>

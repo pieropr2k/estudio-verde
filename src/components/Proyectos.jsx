@@ -13,7 +13,7 @@ export default function Proyectos() {
         <div className="contenedor">
           <Aparecer>
             <p className="etiqueta">Proyectos</p>
-            <h2 className="titulo mt-3">Algunos de nuestros trabajos</h2>
+            <h2 className="titulo mt-3">Proyectos de arquitectura y paisajismo</h2>
           </Aparecer>
 
           <ul className="mt-10 grid gap-x-5 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">

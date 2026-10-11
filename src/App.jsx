@@ -5,6 +5,7 @@ import Proyectos from "./components/Proyectos.jsx";
 import ComoTrabajamos from "./components/ComoTrabajamos.jsx";
 import Nosotros from "./components/Nosotros.jsx";
 import Contacto from "./components/Contacto.jsx";
+import FAQ from "./components/FAQ.jsx";
 import Footer from "./components/Footer.jsx";
 import BotonWhatsApp from "./components/BotonWhatsApp.jsx";
 
@@ -21,6 +22,7 @@ export default function App() {
         <Nosotros />
         <Proyectos />
         <Contacto />
+        <FAQ />
       </main>
       <Footer />
       <BotonWhatsApp />

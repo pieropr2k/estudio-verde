@@ -31,7 +31,7 @@ export default function Contacto() {
     <>
       {/* ===== SECCIÓN: CONTACTO ===== */}
       {/* La sección más importante: el "lugar ordenado" para contactarlos. */}
-      <section id="contacto" className="sobre-oscuro bg-[#6B483B] py-16 text-crema lg:py-24">
+      <section id="contacto" className="sobre-oscuro bg-terracota-intenso py-16 text-crema lg:py-24">
         <div className="contenedor">
           <Aparecer>
             <div className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">

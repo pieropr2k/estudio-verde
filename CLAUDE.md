@@ -43,11 +43,12 @@ Paula quiere "un solo lugar ordenado" para que la contacten.
 | 1 | Header (nombre + botón "Contacto") | Contacto a mano desde el primer segundo |
 | 2 | Inicio (hero) | Que se entienda al toque quiénes son y qué hacen |
 | 3 | Qué hacemos | Dejar claro que son arquitectura **y** paisajismo |
-| 4 | Proyectos | "La web tiene que entrar por los ojos". Las fotos venden |
-| 5 | Cómo trabajamos | Que la gente entienda el proceso antes de contactar |
-| 6 | Nosotros | Equipo chico y cercano (Paula + Martín) |
+| 4 | Cómo trabajamos | Que la gente entienda el proceso antes de contactar |
+| 5 | Nosotros | Equipo chico y cercano (Paula + Martín) |
+| 6 | Proyectos | "La web tiene que entrar por los ojos". Las fotos venden |
 | 7 | Contacto | El "lugar ordenado": mail + WhatsApp + ubicación + Instagram |
-| 8 | Footer | Repetir los datos de contacto al final |
+| 8 | Preguntas frecuentes | Resolver dudas comunes sin precios y llevar de nuevo a WhatsApp |
+| 9 | Footer | Repetir los datos de contacto al final |
 | + | Botón flotante de WhatsApp | Contacto disponible en todo momento, sobre todo en celular |
 
 ### Descartado (y por qué)

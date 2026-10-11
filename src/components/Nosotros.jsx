@@ -31,8 +31,8 @@ export default function Nosotros() {
             <p className="etiqueta">Nosotros</p>
             <h2 className="titulo mt-3">Somos Paula y Martín</h2>
             <p className="mt-5 max-w-md text-lg font-light text-bosque/85">
-              Somos hermanos y un estudio chico. Cuando nos escribís, hablás directamente con
-              nosotros, y te acompañamos durante todo el proyecto.
+              Somos hermanos y tenemos un estudio chico. Cuando nos escribís, hablás directo con
+              nosotros y te acompañamos durante todo el proyecto.
             </p>
             <p className="mt-4 max-w-md text-lg font-light text-bosque/85">
               Nos une una misma idea: que cada espacio se lleve bien con su entorno.
@@ -50,8 +50,8 @@ export default function Nosotros() {
                   retrato
                 />
                 <h3 className="mt-4 font-serif text-2xl font-medium sm:text-3xl">{persona.nombre}</h3>
-                <p className="etiqueta mt-1">{persona.rol}</p>
-                <p className="mt-2 text-sm text-bosque/85 sm:text-base">{persona.texto}</p>
+                <p className="etiqueta mt-1 text-sm">{persona.rol}</p>
+                <p className="mt-2 text-base text-bosque/85">{persona.texto}</p>
               </Aparecer>
             ))}
           </ul>

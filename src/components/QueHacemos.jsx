@@ -33,7 +33,7 @@ export default function QueHacemos() {
         <div className="contenedor">
           <Aparecer>
             <p className="etiqueta">Qué hacemos</p>
-            <h2 className="titulo mt-3 max-w-2xl">Hacemos la obra y también el jardín</h2>
+            <h2 className="titulo mt-3 max-w-2xl">Arquitectura y paisajismo: la obra y también el jardín</h2>
           </Aparecer>
 
           {/* Dos bloques al mismo nivel */}
@@ -60,7 +60,7 @@ export default function QueHacemos() {
           <Aparecer className="mt-5 rounded-3xl bg-bosque p-7 text-crema sm:p-10 lg:p-14">
             <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center lg:gap-14">
               <div>
-                <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-salvia-claro">
+                <p className="etiqueta flex items-center gap-2 text-salvia-claro">
                   <IconoBrote className="h-5 w-5" />
                   Conciencia ambiental
                 </p>

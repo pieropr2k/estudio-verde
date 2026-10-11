@@ -6,9 +6,9 @@ import { IconoCerrar, IconoMenu, IconoWhatsApp } from "./Iconos.jsx";
 const MENU = [
   { href: "#inicio", texto: "Inicio" },
   { href: "#que-hacemos", texto: "Qué hacemos" },
+  { href: "#como-trabajamos", texto: "Cómo trabajamos" },
   { href: "#nosotros", texto: "Nosotros" },
   { href: "#proyectos", texto: "Proyectos" },
-  { href: "#como-trabajamos", texto: "Cómo trabajamos" },
   { href: "#contacto", texto: "Contacto" },
 ];
 
@@ -45,7 +45,7 @@ export default function Header() {
         }`}
       >
         <div className="contenedor flex h-[77px] items-center justify-between gap-3">
-          <Logo className="text-2xl font-semibold sm:text-[1.75rem]" />
+          <Logo className="text-2xl sm:text-[1.75rem]" />
 
           {/* Menú de escritorio */}
           <nav aria-label="Principal" className="hidden lg:block">
@@ -54,7 +54,7 @@ export default function Header() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="inline-flex min-h-[44px] items-center text-[15px] font-semibold opacity-90 transition-opacity hover:opacity-100 xl:text-[17px]"
+                    className="inline-flex min-h-[44px] items-center text-[15px] font-medium opacity-90 transition-opacity hover:opacity-100 xl:text-[17px]"
                   >
                     {item.texto}
                   </a>
@@ -71,8 +71,8 @@ export default function Header() {
                 para que se vea siempre, también en celular. */}
             <a
               {...enlace("whatsapp")}
-              className={`inline-flex min-h-[44px] items-center gap-2 rounded-full px-4 text-[15px] font-semibold transition-colors duration-300 sm:px-5 sm:text-base ${
-                solido ? "bg-bosque text-crema hover:bg-salvia-oscuro" : "bg-crema text-bosque hover:bg-arena"
+              className={`inline-flex min-h-[48px] items-center gap-2 rounded-full px-4 text-[15px] font-medium transition-colors duration-300 sm:px-5 sm:text-base ${
+                solido ? "bg-bosque text-crema hover:bg-salvia-oscuro" : "bg-salvia-oscuro text-crema ring-1 ring-crema/40 hover:bg-salvia"
               }`}
             >
               <IconoWhatsApp className="h-[18px] w-[18px]" />
@@ -106,7 +106,7 @@ export default function Header() {
                 <a
                   href={item.href}
                   onClick={() => setAbierto(false)}
-                  className="flex min-h-[52px] items-center font-serif text-2xl font-semibold"
+                  className="flex min-h-[52px] items-center font-serif text-2xl font-medium"
                 >
                   {item.texto}
                 </a>
