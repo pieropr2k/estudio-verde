@@ -1,9 +1,11 @@
 import { CONTACTO, enlace } from "../config.js";
 import Aparecer from "./Aparecer.jsx";
+import FormularioContacto from "./FormularioContacto.jsx";
 import { IconoFlecha, IconoInstagram, IconoMail, IconoUbicacion, IconoWhatsApp } from "./Iconos.jsx";
 
-// Un botón por canal. Sin formulario, sin dirección, sin mapa y sin otros teléfonos:
-// la idea es que todas las consultas entren por acá.
+// Un botón por canal + un formulario corto que NO es un canal nuevo: arma el mensaje
+// y lo manda al WhatsApp de Paula (ver FormularioContacto.jsx). Sin dirección, sin mapa
+// y sin otros teléfonos: la idea es que todas las consultas entren por acá.
 const CANALES = [
   {
     canal: "whatsapp",
@@ -80,6 +82,11 @@ export default function Contacto() {
                 ))}
               </ul>
             </div>
+          </Aparecer>
+
+          {/* Formulario: alternativa para quien prefiere escribir todo junto */}
+          <Aparecer className="mt-12 lg:mt-16">
+            <FormularioContacto />
           </Aparecer>
         </div>
       </section>

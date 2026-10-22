@@ -12,6 +12,11 @@ export const CONTACTO = {
 // TODO: confirmar con Paula que el nombre es "Estudio Verde" y no "Verde Estudio"
 export const NOMBRE_ESTUDIO = "Estudio Verde";
 
+// URL de la Web App de Apps Script que recibe el formulario (termina en /exec).
+// Se carga en .env.local como VITE_APPS_SCRIPT_URL (y en Vercel > Settings > Environment Variables).
+// Vacía = el formulario usa el plan B (abre el mail del visitante).
+export const ENDPOINT_CONSULTAS = import.meta.env.VITE_APPS_SCRIPT_URL || "";
+
 const MENSAJE_WHATSAPP = "¡Hola! Quería consultarles por un proyecto.";
 
 // Un dato sigue pendiente si todavía tiene el TODO o las X del número de ejemplo
